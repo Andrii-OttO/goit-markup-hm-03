@@ -304,10 +304,9 @@ h1 {
   color: rgba(255, 255, 255, 0.6);
 }
 .address {
-  margin-top: 20px;
   font-style: normal;
-  flex-direction: column;
-  align-items: center;
+
+  margin-top: 20px;
   padding-bottom: 60px;
 }
 /*=====foooter ended=======*/
