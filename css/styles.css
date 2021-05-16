@@ -21,7 +21,7 @@ img {
   padding-bottom: 25px;
   background: var(--background);
 }
-.header-portfio {
+.header-portfolio {
   border-bottom: 1px solid #ececec;
 }
 .container {
@@ -31,7 +31,7 @@ img {
   margin: 0 auto;
 }
 .sizing {
-  margin-top: 94px;
+  padding-top: 94px;
 }
 .nav-container {
   display: flex;
@@ -216,6 +216,8 @@ h1 {
   line-height: 1.2;
   text-transform: uppercase;
   color: #212121;
+
+  margin-bottom: 10px;
 }
 .description-one {
   width: 270px;
@@ -235,6 +237,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 188px;
 }
 /*=====преимущества компании===*/
 /*======photo of works======*/
@@ -326,7 +329,6 @@ h1 {
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
-  padding-bottom: 94px;
 }
 .item {
   margin-top: 30px;
