@@ -16,11 +16,13 @@ p {
 img {
   display: block;
 }
-header {
+.header {
   padding-top: 24px;
   padding-bottom: 25px;
   background: var(--background);
-  border-bottom: solid #ececec;
+}
+.header-portfio {
+  border-bottom: 1px solid #ececec;
 }
 .container {
   width: 1200px;
@@ -29,14 +31,11 @@ header {
   margin: 0 auto;
 }
 .sizing {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 94px;
 }
 .nav-container {
-  justify-content: center;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .nav {
   display: flex;
@@ -45,6 +44,7 @@ header {
 .nav-list {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 :root {
   --background: #ffffff;
@@ -57,17 +57,16 @@ header {
 }
 body {
   font-family: "Roboto", sans-serif;
-  font-style: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--gray);
   letter-spacing: 0.03em;
-  background: var(--background-portfolio);
 }
 ul {
   list-style-type: none;
 }
-/*=======heroe======*/
+/*=======hero======*/
 h1 {
   color: var(--background);
   font-weight: 900;
@@ -79,15 +78,16 @@ h1 {
 }
 .main {
   width: 696px;
-  padding-top: 200px;
   margin: auto;
   margin-bottom: 20px;
 }
-.heroe {
+.hero {
   background: var(--background-grey);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
-/*=======end heroe========*/
+/*=======end hero========*/
 /*======buttons==========*/
 .button-heroe {
   font-family: inherit;
@@ -101,7 +101,6 @@ h1 {
   background: var(--blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-bottom: 200px;
 }
 .button-heroe {
   cursor: pointer;
@@ -160,11 +159,6 @@ h1 {
   font-family: "Raleway", sans-serif;
   margin-right: 93px;
 }
-.nav-list-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 .logo-footer {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -173,6 +167,9 @@ h1 {
   line-height: 1.19;
   color: var(--background);
   border: springgreen;
+
+  display: block;
+  padding-top: 60px;
 }
 
 .accent {
@@ -210,6 +207,7 @@ h1 {
 
 /*=====преимущества компании===*/
 .advantage {
+  padding-top: 94px;
   display: flex;
 }
 .description {
@@ -221,6 +219,9 @@ h1 {
 }
 .description-one {
   width: 270px;
+}
+.description-one:not(:last-child) {
+  margin-right: 30px;
 }
 .list-description {
   display: flex;
@@ -248,18 +249,12 @@ h1 {
 }
 /*======photo of works======*/
 /*=====список команды======*/
-.upper-advantage {
-  background: var(--gray-button);
-}
-
 .team-list {
   display: flex;
-}
-.photo-list {
-  background: var(--gray-button);
+  padding-bottom: 94px;
 }
 .team-list-names:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 .team-section {
   background-color: var(--gray-button);
@@ -269,6 +264,7 @@ h1 {
 .names-description {
   background: var(--background);
   border-radius: 0px 0px 4px 4px;
+  padding-top: 30px;
 }
 .team {
   font-weight: 700;
@@ -277,16 +273,15 @@ h1 {
   text-align: center;
   color: #212121;
 
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
-div .team-names-list {
+.team-names-list {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.12;
   text-align: center;
   color: #212121;
 
-  padding-top: 30px;
   margin-bottom: 10px;
 }
 .team-description {
@@ -301,10 +296,7 @@ div .team-names-list {
   background: #2f303a;
   color: #ffffff;
 }
-.footer-box {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 .nav-adres-footer {
   text-decoration: none;
   font-size: 14px;
@@ -316,6 +308,7 @@ div .team-names-list {
   font-style: normal;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 60px;
 }
 /*=====foooter ended=======*/
 /*=====Портфолио====*/
@@ -323,8 +316,6 @@ div .team-names-list {
   margin-right: 50px;
 }
 .portfolio-name {
-  padding-top: 20px;
-  margin: 0 24px 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -336,21 +327,26 @@ div .team-names-list {
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
+  padding-bottom: 94px;
 }
 .item {
   margin-top: 30px;
   margin-left: 30px;
-  flex-basis: calc((100%- 90) / 3);
+  flex-basis: calc((100% - 90) / 3);
 }
 .portfolio {
-  margin: 4px 24px 20px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  margin-top: 4px;
 }
 .under-img {
   background: var(--background);
   border: 1px solid #eeeeee;
   border-width: 0 1px 1px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 24px;
+  align-content: space-between;
 }
 /*=====footer=====*/
