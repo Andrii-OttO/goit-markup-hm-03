@@ -32,6 +32,7 @@ img {
 }
 .sizing {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .nav-container {
   display: flex;
@@ -110,7 +111,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .all {
   width: 73px;
@@ -168,11 +169,7 @@ h1 {
   line-height: 1.19;
   color: var(--background);
   border: springgreen;
-
-  display: block;
-  padding-top: 60px;
 }
-
 .accent {
   color: #2196f3;
 }
@@ -208,7 +205,6 @@ h1 {
 
 /*=====преимущества компании===*/
 .advantage {
-  padding-top: 94px;
   display: flex;
 }
 .description {
@@ -238,6 +234,8 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.box-size {
   padding-bottom: 188px;
 }
 /*=====преимущества компании===*/
@@ -249,7 +247,7 @@ h1 {
   text-align: center;
   color: #212121;
 
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 /*======photo of works======*/
 /*=====список команды======*/
@@ -268,7 +266,7 @@ h1 {
 .names-description {
   background: var(--background);
   border-radius: 0px 0px 4px 4px;
-  padding-top: 30px;
+  padding: 30px 32px;
 }
 .team {
   font-weight: 700;
@@ -288,9 +286,6 @@ h1 {
 
   margin-bottom: 10px;
 }
-.team-description {
-  padding-bottom: 30px;
-}
 .team-list-names {
   text-align: center;
 }
@@ -299,6 +294,8 @@ h1 {
 .footer {
   background: #2f303a;
   color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .nav-adres-footer {
@@ -307,11 +304,13 @@ h1 {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
+.adress-footer {
+  margin-bottom: 9px;
+}
 .address {
   font-style: normal;
 
   margin-top: 20px;
-  padding-bottom: 60px;
 }
 /*=====foooter ended=======*/
 /*=====Портфолио====*/
@@ -330,12 +329,11 @@ h1 {
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
-  margin-bottom: 94px;
 }
 .item {
   margin-top: 30px;
   margin-left: 30px;
-  flex-basis: calc((100% - 90) / 3);
+  flex-basis: calc((100% - 90px) / 3);
 }
 .portfolio {
   font-size: 16px;
