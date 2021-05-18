@@ -236,7 +236,7 @@ h1 {
   justify-content: space-between;
 }
 .box-size {
-  padding-bottom: 188px;
+  padding-bottom: 94px;
 }
 /*=====преимущества компании===*/
 /*======photo of works======*/
@@ -253,7 +253,6 @@ h1 {
 /*=====список команды======*/
 .team-list {
   display: flex;
-  padding-bottom: 94px;
 }
 .team-list-names:not(:last-child) {
   margin-right: 30px;
@@ -297,7 +296,9 @@ h1 {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+address .map {
+  color: var(--background);
+}
 .nav-adres-footer {
   text-decoration: none;
   font-size: 14px;
